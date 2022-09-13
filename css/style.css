@@ -16,7 +16,12 @@ a {
  --bg-color-1:#EBF7F6;
  --basic-color:#000000;
  --light-color:#9F9F9F;
- 
+ --highlight-color:#21C7AE;
+ --special-buttons-bg-color:#CBCBCB;
+ --cat-color:#0583D8;
+ --points-color:#03AEB2;
+  --share-color:#0583D8;
+  --book-button-color:#02CB9B; 
 }
 
 /* top header */
@@ -67,17 +72,23 @@ a {
 /* .main_header .header_details .right_side_header .events::after {
   top: 11px;
 } */
-.main_header .header_details .left_side_header .contact i,
-.main_header .header_details .left_side_header .assiatant i,
-.main_header .header_details .right_side_header .events i ,
-.main_header .header_details .right_side_header .organizer i {
-  padding: 0px 10px;
-}
-.main_header .header_details .left_side_header  span,
-.main_header .header_details .right_side_header  span  {
+
+.main_header .header_details .left_side_header a,
+.main_header .header_details .right_side_header a ,
+.main_header .header_details .left_side_header .contact span  {
   font-size: 12px;
   text-transform: capitalize;
   padding-right: 10px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+.main_header .header_details .left_side_header .contact span i,
+.main_header .header_details .left_side_header .contact  a i,
+.main_header .header_details .left_side_header .assiatant a i,
+.main_header .header_details .right_side_header .events a  i ,
+.main_header .header_details .right_side_header .organizer a  i {
+  padding: 0px 10px;
+  font-size: 14px;
 }
 .main_header .header_details .right_side_header .log button {
   background-color:var(--text-color);
@@ -100,6 +111,7 @@ a {
 }
 .main_header .header_details .right_side_header .log button a {
   font-size: 12px;
+  padding: 0px;
 }
 /* end of main  top header */
 /* navigation and mega menu  */
@@ -323,7 +335,7 @@ a {
 }
 .sub-menu h4 {
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 17px;
 }
 .sub-menu .sub-menu-item h4 a {
@@ -596,6 +608,14 @@ a {
   position: relative;
   overflow: hidden;
 }
+.browsing_field .browsing_details{
+  align-items:center;
+  justify-content: center;
+}
+.browsing_field ._browsing_info{
+  position: relative;
+  z-index: 1;
+}
 .browsing_field ._browsing_info h3  {
   font-size: 38px;
   color:var(--basic-color);
@@ -606,14 +626,16 @@ a {
   font-size: 18px;
 }
 .browsing_field ._browsing_info button{
-  text-transform: capitalize;
-  font-weight: 700;
-  font-size: 19px;
-  color:var(--light-color);
   text-decoration: underline;
   border:none;
   background-color:transparent;
   outline: none;
+}
+.browsing_field ._browsing_info button a {
+  font-weight: 700;
+  font-size: 19px;
+  color:var(--light-color);
+  text-transform: capitalize;
 }
 .browsing_field .browsing_items{
   padding-left: 30px;
@@ -629,6 +651,20 @@ a {
   border-radius: 18px;
   margin-bottom: 22px;
   background-color:var(--text-color);
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  cursor:pointer;
+}
+.browsing_field .browsing_items .browing_Card:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  cursor:pointer;
 }
 .browsing_field .browsing_items .browing_Card img {
   margin-bottom: 17px;
@@ -647,8 +683,188 @@ a {
   bottom: -142px;
   width: 439px;
 }
+/* medical card */
+.card {
+  width: 19.4rem;
+  margin: auto;
+}
+.common_cards .medical_card{
+  border-radius: 25px;
+  /* border: 1px solid #707070; */
+  box-shadow: 0px 1px 3px #00000029;
+}
+.common_cards .medical_card .image  {
+  height: 225px;
+  background-image:linear-gradient(#70707060,#70707060),url(./../images/news-18-1@2x.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  position: relative;
+  border-top-left-radius: 25px;
+ border-top-right-radius: 25px;
+}
+.common_cards .medical_card .image  img{
+  height: 100%;
+}
 
+.common_cards .medical_card .image::after{
+  content:"";
+  width: 100%;
+  height: 225px;
+  background-color: hsla(223, 66%, 15%, 0.644);
+  position: absolute;
+  top: 0px;
+  display: none;
+}
+.common_cards .medical_card .medical_card_info{
+  padding:21px 12px 9px;
+}
+.common_cards .medical_card .medical_card_info .header_info {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.common_cards .medical_card .medical_card_info .header_info .date {
+  display: inline-flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  position: relative;
+  padding-right: 18px;
+}
+.common_cards .medical_card .medical_card_info .header_info .date span{
+   font-size: 15px;
+   color: var(--main-color);
+   font-weight: 600;
+}
+.common_cards .medical_card .medical_card_info .header_info .date span:first-child{
+  font-size:18px;
+  
+}
 
+.common_cards .medical_card .medical_card_info .header_info .date::after{
+  content: " ";
+  position: absolute;
+  right: 0px;
+  width: 0px;
+  height: 44px;
+  border-right: 1px solid #D8D8D8;
+  color:#D8D8D8;
+
+} 
+.common_cards .medical_card .medical_card_info .header_info h5 {
+  color:var(--basic-color);
+  font-size: 15px;
+  min-width: 181px;
+  display: inline-block;
+  padding-left: 12px;
+  font-weight: 700;
+}
+
+.common_cards .medical_card .medical_card_info .category{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+.common_cards .medical_card .medical_card_info .category button {
+  border-radius: 15px;
+  padding:6px 12px;
+  color:var(--text-color);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.common_cards .medical_card .medical_card_info .category div button:first-of-type{
+  background-color:var(--cat-color);  
+  border: 1px solid #0583D8;
+}
+.common_cards .medical_card .medical_card_info .category div button:nth-of-type(2){
+  background-color:var(--special-buttons-bg-color);  
+  border: 1px solid #CBCBCB;
+}
+.common_cards .medical_card .medical_card_info .category >button {
+  background-color:var(--highlight-color);
+  border: transparent;
+
+}
+.common_cards .medical_card .medical_card_info .share {
+  display: flex;
+  align-items:center;
+  justify-content: space-between; 
+
+}
+.common_cards .medical_card .medical_card_info .share h6 {
+  font-size: 16px;
+  color:var(--points-color);
+  font-weight: 700;
+
+}
+.common_cards .medical_card .medical_card_info .share .icons {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.common_cards .medical_card .medical_card_info .share .icons>* {
+  color:var(--share-color);
+}
+.common_cards .medical_card .medical_card_info .share .icons i{
+  padding: 6px 6px 4px;
+  border: 1px solid #0583D8;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.common_cards .medical_card .medical_card_info .share .icons span {
+  padding-left: 5px;
+  padding-right: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.common_cards .medical_card .medical_card_info .list .list_info {
+  display: flex;
+  align-items:center;
+
+}
+.common_cards .medical_card .medical_card_info .list .list_info >*{
+  color: var(--light-color);
+  margin-right: 10px;
+  font-size: 12px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.common_cards .medical_card .medical_card_info .booking{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.common_cards .medical_card .medical_card_info .booking span {
+  font-size: 19px;
+  color: var(--basic-color);
+  font-weight: 600;
+
+}
+.common_cards .medical_card .medical_card_info .booking span span {
+  margin-right: 6px;
+}
+.common_cards .medical_card .medical_card_info .booking button {
+  border: 1px solid var(--book-button-color);
+  border-radius: 50px;
+  padding: 6px 26px 5px;
+
+}
+.common_cards .medical_card .medical_card_info .booking button a{
+  color: var(--book-button-color);
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 15px;
+
+}
 /* footer */
 
 footer{
@@ -806,6 +1022,10 @@ footer{
     top: 6px;
     background-color: var(--main-color);
     padding: 6px 15px;
+  }
+  .browsing_field .browsing_items{
+    padding-left: 0px;
+  
   }
 }
 /* media query for laptops  */
