@@ -683,15 +683,148 @@ a {
   bottom: -142px;
   width: 439px;
 }
+/* featured events section */
+.featured_events ,
+.live_trianing ,
+.featured_events_bg_2
+{
+  padding: 55px 70px;
+  position: relative;
+}
+.featured_events .background{
+  background-color:var(--main-color);
+  width: 978px;;
+  height: 320px;
+  position: absolute; 
+  overflow: hidden;
+  top: 0%;
+  left: 0%;
+}
+.featured_events .background img {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.featured_events .title,
+.live_trianing .title,
+.featured_events_bg_2 .title {
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.featured_events .title .info h4,
+.live_trianing .title .info h4,
+.featured_events_bg_2 .title .info h4 {
+  font-size: 38px;
+  font-weight: 600;
+  text-transform:capitalize;
+color: var(--text-color);
+}
+
+.featured_events .title > a,
+.live_trianing .title > a ,
+.featured_events_bg_2 .title > a {
+  color:var(--cat-color);
+  text-transform:capitalize;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 20px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 43%;
+  right: 50px;
+
+
+}
+.featured_events .title p,
+.live_trianing .title p,
+.featured_events_bg_2 .title p
+{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* slider buttons */
+.slick-slider {
+  position: relative;
+}
+.slick-list{
+  padding: 0%;
+}
+.slick-slider > button{
+  position: absolute;
+  bottom:-60px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  z-index:100;
+  width: 48px;
+  height: 40px;
+  color: transparent;
+  cursor: pointer;
+  transform: translate(0%,-80%);
+  /*box-shadow: 0px 2px 20px rgba(0,0,0,0.07);
+  */border: 1px solid #0E1C3F;
+  border-radius: 5px;
+  -webkit-transform: translate(30%,-132%);
+  -moz-transform: translate(0%,-80%);
+  -ms-transform: translate(0%,-80%);
+  -o-transform: translate(0%,-80%);
+}
+.slick-slider .slick-prev{
+  right: 12%;
+  top: -4%;
+}
+.slick-slider .slick-prev::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f104";
+  font-size:20px;
+  left: 10px;
+  position: relative;
+  z-index: 10;
+  color:#0D1B3E;
+}
+.slick-slider .slick-next{
+  right: 8%;
+  top: -4%;
+}
+.slick-slider .slick-next::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f105";
+  font-size:20px;
+  right: 22px;
+  position: relative;
+  z-index: 10;
+  color:#0D1B3E;
+
+}
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
 /* medical card */
+.medical_carsoule{
+  padding: 10px 40px;
+}
 .card {
-  width: 19.4rem;
+  /* width: 19.4rem; */
   margin: auto;
+  margin: 15px;
 }
 .common_cards .medical_card{
   border-radius: 25px;
   /* border: 1px solid #707070; */
   box-shadow: 0px 1px 3px #00000029;
+  cursor: pointer;
+
+}
+.medical_carsoule{
+  padding: 0;
 }
 .common_cards .medical_card .image  {
   height: 225px;
@@ -701,9 +834,50 @@ a {
   position: relative;
   border-top-left-radius: 25px;
  border-top-right-radius: 25px;
+ display: flex;
+ align-items:center;
+ justify-content: center;
 }
-.common_cards .medical_card .image  img{
-  height: 100%;
+
+.common_cards .medical_card .image i {
+  font-size:50px;
+  color:var(--text-color);
+  display: none;
+  transition: 10s all ease;
+  -webkit-transition: 10s all ease;
+  -moz-transition: 10s all ease;
+  -ms-transition: 10s all ease;
+  -o-transition: 10s all ease;
+  position: relative;
+}
+.common_cards .medical_card .image span {
+  padding: 12px 21px;
+  font-size: 19px;
+  font-weight: 600;
+  color:var(--text-color);
+
+  position: absolute;
+  left: -17px;
+  bottom:15px;
+  background-color:var(--book-button-color);
+
+
+}
+.common_cards .medical_card .image span::before{
+  content:"";
+  width: 17px;
+  height: 20px;
+  background-color: #009974;
+  position: absolute;
+  top: -8px;
+  left: 0px;
+  transform: skewY(-50deg);
+  -webkit-transform: skewY(-50deg);
+  -moz-transform: skewY(-50deg);
+  -ms-transform: skewY(-50deg);
+  -o-transform: skewY(-50deg);
+  z-index:-1;
+  overflow:hidden
 }
 
 .common_cards .medical_card .image::after{
@@ -714,6 +888,29 @@ a {
   position: absolute;
   top: 0px;
   display: none;
+  transition: 10s all ease;
+  -webkit-transition: 10s all ease;
+  -moz-transition: 10s all ease;
+  -ms-transition: 10s all ease;
+  -o-transition: 10s all ease;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.common_cards .medical_card:hover{
+  transition: 10s all ease;
+}
+
+.common_cards .medical_card:hover .image::after{
+  display: block;
+  z-index: 1;
+}
+.common_cards .medical_card:hover .image i{
+  display: flex;
+  z-index: 2;
+} 
+.common_cards .medical_card:hover .image span{
+  display: none;
+ 
 }
 .common_cards .medical_card .medical_card_info{
   padding:21px 12px 9px;
@@ -828,7 +1025,22 @@ a {
 .common_cards .medical_card .medical_card_info .list .list_info {
   display: flex;
   align-items:center;
+  position: relative;
 
+}
+.common_cards .medical_card .medical_card_info .list .list_info .feature{
+  position: absolute;
+  right: 0px;
+  bottom:0px
+}
+.common_cards .medical_card .medical_card_info .list .list_info .feature span,
+.common_cards .medical_card .medical_card_info .list .list_info .feature i {
+  color:#0490CD;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-left: 5px;
+  margin-bottom: 7px;
 }
 .common_cards .medical_card .medical_card_info .list .list_info >*{
   color: var(--light-color);
@@ -865,12 +1077,169 @@ a {
   font-size: 15px;
 
 }
+
+/* live training section  */
+.live_trianing {
+  background-color:var(--bg-color-1)
+}
+.live_trianing .title .info h4{
+  color:var(--main-color);
+}
+.live_trianing .title p{
+  color:var(--main-color);
+}
+.live_trianing .title a{
+  bottom: 63%;
+  right: 102px;
+}
+
+/* premium button */
+
+/* .featured_events_carsoul.slick-slider .slick-prev::before{
+background: yellow;
+color:brown
+} */
+
+
+/* featured evens section 2 */
+.featured_events_bg_2 .background {
+  background-color: var(--main-color);
+  width: 978px;
+  height: 320px;
+  position: absolute;
+  overflow: hidden;
+  top: 0%;
+  right: 0px;
+}
+.featured_events_bg_2 .title .info h4{
+  color:var(--main-color);
+}
+.featured_events_bg_2 .title p{
+  color:var(--main-color);
+}
+.featured_events_bg_2 .title > a{
+  color:var(--text-color);
+  bottom: 63%;
+ 
+}
+.featured_events_bg_2 .slick-slider .slick-next{
+  border-color: var(--text-color);
+}
+.featured_events_bg_2 .slick-slider .slick-prev {
+  border-color: var(--text-color);
+}
+.featured_events_bg_2  .slick-slider .slick-prev::before{
+color: var(--text-color);
+}
+.featured_events_bg_2  .slick-slider .slick-next::after{
+color: var(--text-color);
+}
+.featured_events_bg_2 .background img:first-of-type {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.featured_events_bg_2 .background img:nth-of-type(2) {
+  position: absolute;
+  right: 20%;
+  top: 0px;
+}
+.events_carsoul_section .slick-slider .slick-prev,
+.events_carsoul_section .slick-slider .slick-next {
+  display: none !important;
+}
+.events_carsoul_section .title .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.events_carsoul_section .title .info div{
+  display: flex;
+  align-items:center;
+
+}
+.events_carsoul_section .title .info div h4 {
+  display: inline-block;
+  margin-right: 85px;
+}
+.events_carsoul_section .title .info p {
+  max-width: 600px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  color:var(--nav-text-color);
+}
+.events_carsoul_section .title .button_filter button{
+  background-color:transparent;
+  border:transparent;
+}
+.events_carsoul_section .title .button_filter button a {
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+.events_carsoul_section .title .button_filter button:nth-of-type(2) a,
+.events_carsoul_section .title .button_filter button:nth-of-type(3) a{
+  color:black;
+  text-decoration:none;
+}
 /* footer */
 
 footer{
   padding: 60px;
   background-color:var(--main-color);
-  
+  color:white;
+}
+footer h6 {
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+footer .left_info img{
+  margin-bottom: 30px;
+}
+footer .left_info p{
+font-size: 18px;
+padding: 10px;
+}
+footer .useful_links ul  {
+  list-style: none;
+}
+footer .useful_links ul li{
+  margin-bottom: 8px;
+}
+footer .useful_links ul li i{
+  margin-right: 10px;
+  font-size: 16px;
+}
+footer .useful_links ul li a{
+  font-size: 18px;
+  color:var(--text-color);
+  text-transform:capitalize;
+}
+footer .contact_details .contact_info {
+  display: flex;
+  align-items:center;
+}
+footer .contact_details .contact_info img {
+  margin-right: 10px;
+}
+/* footer .contact_details .contact_info .info{
+
+} */
+.copyright {
+  background-color:#06112C;
+
+}
+.copyright h6{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  color:var(--text-color);
+  padding: 25px 0px;
+  margin: 0px;
 }
 
 /* -------------------------------------------------------------------------------------------------------- */
@@ -950,7 +1319,11 @@ footer{
     padding: 19px 30px;
     box-shadow: 0px 7px 20px #00000029;
     border-radius: 7px;
-  }
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
   .men_menu img {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -974,20 +1347,20 @@ footer{
     color: #4f9312d1;
     font-weight: 600;
   }
- 
-  /* end of home page  */
-/* start of register page  */
-/* end of register page  */
-/* start of login page  */
-
-.Account{
-  padding: 20px;
+  .common_cards .medical_card .medical_card_info .booking button{
+    padding: 6px 17px 4px;
+  }
+  .featured_events .title a{
+    top: 3%;
+    right: 132px;
+  }
+  .slick-slider .slick-next{
+    right: 8%;
+  }
+  .slick-slider .slick-prev {
+    right: 12%;
+    top: -4%;
 }
-.login_account {
-  width: 40%;
-}
-
-/* end of  log in page */
 }
 @media (max-width: 1205px) and (min-width: 992px) {
   .navbar {
@@ -1027,6 +1400,28 @@ footer{
     padding-left: 0px;
   
   }
+  .featured_events .title a{
+    right: 52px;
+    color: var(--text-color);
+  }
+  .slick-slider .slick-next{
+    right: 5%;
+    border-color: var(--text-color);
+  }
+  .slick-slider .slick-prev {
+    right: 12%;
+    top: -4%;
+    border-color: var(--text-color);
+}
+.featured_events .slick-slider .slick-prev::before{
+  color: var(--text-color);
+  }
+  .featured_events .slick-slider .slick-next::after{
+  color: var(--text-color);
+  }
+.featured_events .background{
+  width: 100%;
+}
 }
 /* media query for laptops  */
 @media (min-width: 767px) and (max-width: 991px) {
@@ -1134,6 +1529,35 @@ footer{
   .browsing_field .browsing_items{
     padding-left: 0px;
   }
+  .featured_events .title a{
+    bottom: 60%;
+    right: 40px;
+    color:var(--text-color);
+  }
+  .featured_events .slick-slider .slick-next{
+    right: 5%;
+    border-color: white;
+  }
+  .featured_events .slick-slider .slick-prev {
+    right: 12%;
+    top: -4%;
+    border-color: white;
+
+}
+
+.featured_events .slick-slider .slick-prev::before{
+  color: var(--text-color);
+}
+.featured_events .slick-slider .slick-next::after{
+  color: var(--text-color);
+}
+.featured_events .background{
+  width: 100%;
+}
+.events_carsoul_section .title .info{
+  flex-direction: column;
+  align-items:flex-end;
+}
 }
 
 /* media wuery for tablets  */
@@ -1240,6 +1664,48 @@ footer{
   .browsing_field ._browsing_info h3 {
     font-size: 33px;
   }
+  .common_cards .medical_card .medical_card_info .booking button {
+    padding: 6px 10px 5px;
+  }
+  .featured_events .title a{
+    right: 40px;
+  }
+  .slick-slider .slick-next{
+    right: 5%;
+  }
+  .slick-slider .slick-prev {
+    right: 14%;
+    top: -4%;
+
+}
+.featured_events .background{
+  width: 100%;
+}
+.featured_events .title a{
+  bottom: 60%;
+  right: 40px;
+  color:var(--text-color);
+}
+.featured_events .slick-slider .slick-next{
+  right: 5%;
+  border-color: white;
+}
+.featured_events .slick-slider .slick-prev {
+  right: 16%;
+  top: -4%;
+  border-color: white;
+
+}
+.featured_events .slick-slider .slick-prev::before{
+color: var(--text-color);
+}
+.featured_events .slick-slider .slick-next::after{
+color: var(--text-color);
+}
+.events_carsoul_section .title .info{
+  flex-direction: column;
+  align-items:flex-end;
+}
 }
 /* mobile screen */
 
@@ -1352,8 +1818,70 @@ footer{
     padding-left: 0px;
   }
   .browsing_field ._browsing_info h3 {
-    font-size: 33px;
+    font-size: 30px;
   }
+  .medical_carsoule {
+    padding: 10px 4px;
+
+  }
+  .featured_events, .live_trianing, .featured_events_bg_2{
+    padding: 60px 4px;
+  }
+  .featured_events .title a{
+    bottom: 60%;
+    right: -22px;
+    color:var(--text-color);
+  }
+  .featured_events .slick-slider .slick-next{
+    right: 0%;
+    border-color: white;
+  }
+  .featured_events .slick-slider .slick-prev {
+    right: 20%;
+    top: -6%;
+    border-color: white;
+}
+  .featured_events .slick-slider .slick-prev::before{
+  color: var(--text-color);
+  }
+  .featured_events .slick-slider .slick-next::after{
+  color: var(--text-color);
+  }
+.featured_events .background{
+  width: 100%;
+}
+.featured_events .title .info h4, .live_trianing .title .info h4, .featured_events_bg_2 .title .info h4{
+  font-size: 30px;
+}
+
+.live_trianing .title p{
+  font-size: 16px;
+} 
+.featured_events_bg_2 .title .info h4{
+  color:var(--text-color);
+  font-size: 30px;
+}
+.featured_events_bg_2 .title p{
+  color:var(--text-color);
+}
+.events_carsoul_section .title .info div h4{
+  font-size: 28px;
+}
+.events_carsoul_section .title .info p{
+  font-size: 15px;
+}
+.events_carsoul_section .title .button_filter button a{
+  margin-right: 0px;
+  font-size: 15px;
+}
+.events_carsoul_section .title .info div:first-of-type{
+  flex-direction: column;
+  align-items: flex-start;
+}
+.events_carsoul_section .title .info{
+  flex-direction: column;
+  align-items:flex-end;
+}
 }
  
 /* special media query for small  mobile screens */
@@ -1455,44 +1983,34 @@ footer{
     font-size: 10px;
     margin: 0px;
   }
-  /* Mall shop flipster */
-  .malls_shop_section .mall_shop_flipster .flipster .flip-items li img{
-    width: 250px;
+  .featured_events .title {
+    /* padding-left: 24px;
+    padding-right: 0px;
+    padding-top: inherit;
+    padding-bottom: 36px; */
+    position: relative;
   }
-  .swiper{
-    width: 100%;
+  .featured_events .title p {
+    padding-bottom: 30px;
   }
+  .featured_events .title a{
+    right: 40px;
+    bottom: 16%;
+  }
+  .slick-slider .slick-next{
+    right: 5%;
+   top: -6%;
+  }
+  .slick-slider .slick-prev {
+    right: 20%;
+    top: -6%;
 
-  /* count down section */
-  .count_down_section .counter_right{
-    width: 100%;
-    margin-top: 50px;
-  }
+}
+.slick-slider > button{
+  border-radius: 5px;
+  transform: translate(-37%,2%);
+}
 
-  /* best offer product */
-  .product_buttons .product-links li{
-    display: none;
-  }
-  .product1_card:hover .product-links li{
-    display: block;
-  }
-  
-   /*  best offers product */
-   .buy_resp{
-    flex-wrap: wrap;
-    justify-content:space-between;
-  }
-  /* soon product cards */
-  .soon_product_card{
-    flex-direction: column;
-    height: 100%;
-  }
-  .soon_product_card .product_details_left .sizes{
-    display: none;
-  }
-  .soon_product_card .product_details_left{
-    width: 100%;
-  }
 }
 /*  media query for  screens less than 320 px */
 @media (max-width: 320px) {
@@ -1671,6 +2189,24 @@ footer{
 }
 
 /* special mediaquery  */
+@media (min-width: 1210px)  and (max-width: 1600px){
+  .featured_events .title a{
+    top: 3%;
+    right: 60px;
+  
+  }
+  .slick-slider .slick-next{
+    right: 6%;
+   
+  }
+  .slick-slider .slick-prev {
+    right: 11%;
+    top: -4%;
+   
+}
+
+
+}
 
 @media (min-width: 320px)  and (max-width: 410px){
  /*  start of main top  header  */
