@@ -3,7 +3,7 @@ $('.medical_carsoule').slick({
     centerPadding: '10px',
     slidesToShow: 4,
     slidesToscroll: 4,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,
     responsive: [

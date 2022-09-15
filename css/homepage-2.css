@@ -1,0 +1,117 @@
+.main_header .header_details{
+    justify-content: end;
+}
+.main_header .header_details .left_side_header a{
+    margin-left: 10px;
+    padding-right: 0px;
+}
+.men_menu{
+    width: 13%;
+    right: 38%;
+    top: 63px;
+}
+.organizer_menu {
+    right: 24%;
+}
+.navbar-nav > li > a{
+    font-size:22px;
+    text-transform:uppercase;
+    color:#515151;
+    font-weight: 400;
+}
+.main-wrapper ul li button {
+    padding: 15px 21px;
+    background-color: var(--main-color);
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 50px;
+    border:none;
+
+}
+.main-wrapper ul li button a {
+    font-size: 18px;
+    color:white;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.common_cards .medical_card .medical_card_info .header_info{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.common_cards .medical_card .medical_card_info .header_info h5{
+    padding: 0px;
+    font-size: 19px;
+    color:#000000;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0px;
+
+}
+.common_cards .medical_card .medical_card_info .category{
+    margin-bottom: 5px;
+}
+.common_cards .medical_card .medical_card_info .category span {
+    font-size: 16px;
+    color:#03AEB2;
+    text-transform: capitalize;
+}
+.common_cards .medical_card .medical_card_info .category > span{
+    font-size: 12px;
+}
+.common_cards .medical_card .medical_card_info .list .list_info{
+    justify-content: space-between;
+}
+.common_cards .medical_card .medical_card_info .list .list_info span {
+    color:#AEAEAE;
+    font-size: 11px;
+}
+.common_cards .medical_card .medical_card_info .list .list_info >* {
+    margin-right: 0px;
+    margin-bottom: 15px;
+}
+.common_cards .medical_card .medical_card_info {
+padding: 8px 10px 9px;
+}
+.common_cards .medical_card .image{
+    height: 183px;
+}
+.common_cards .medical_card:hover .image::after
+{
+    display: none;
+}
+.common_cards .medical_card .image i{
+    display: block;
+    font-size: 19px;
+    margin-bottom: 10px;
+    color:#03AEB2;
+    background-color:white;
+    border-color: #03AEB2;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    padding: 10px;
+}
+.common_cards .medical_card:hover .image i{
+    background: #0583D8;
+    color:white;
+}
+.common_cards .medical_card .image{
+    background-image: url(./../images/news-18-1@2x.png);
+}
+.common_cards .medical_card .image{
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 21px;
+    padding-right: 21px;
+
+}
+.common_cards .medical_card:hover .medical_card_info .booking button {
+    background-color:#02CB9B;
+    
+}
+.common_cards .medical_card:hover .medical_card_info .booking button a{
+    color:white;
+}
