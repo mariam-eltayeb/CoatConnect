@@ -774,6 +774,12 @@ color: var(--text-color);
   -ms-transform: translate(0%,-80%);
   -o-transform: translate(0%,-80%);
 }
+.slick-slider > button:hover {
+  background-color:var(--main-color);
+} 
+.slick-slider > button:hover  {
+  background-color:var(--main-color);
+} 
 .slick-slider .slick-prev{
   right: 12%;
   top: -4%;
@@ -791,6 +797,10 @@ color: var(--text-color);
 .slick-slider .slick-next{
   right: 8%;
   top: -4%;
+}
+.slick-slider .slick-next:hover::after,
+.slick-slider .slick-prev:hover::before {
+color:var(--text-color);
 }
 .slick-slider .slick-next::after{
   font-family: "Font Awesome 5 Free";
@@ -843,11 +853,6 @@ color: var(--text-color);
   font-size:50px;
   color:var(--text-color);
   display: none;
-  transition: 10s all ease;
-  -webkit-transition: 10s all ease;
-  -moz-transition: 10s all ease;
-  -ms-transition: 10s all ease;
-  -o-transition: 10s all ease;
   position: relative;
 }
 .common_cards .medical_card .image span {
@@ -888,17 +893,10 @@ color: var(--text-color);
   position: absolute;
   top: 0px;
   display: none;
-  transition: 10s all ease;
-  -webkit-transition: 10s all ease;
-  -moz-transition: 10s all ease;
-  -ms-transition: 10s all ease;
-  -o-transition: 10s all ease;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
-.common_cards .medical_card:hover{
-  transition: 10s all ease;
-}
+
 
 .common_cards .medical_card:hover .image::after{
   display: block;
@@ -1078,6 +1076,134 @@ color: var(--text-color);
 
 }
 
+
+/* featured organizers */
+.featured_organizer .organizer_titile h4 {
+  font-size: 38px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color:var(--basic-color);
+    text-align: center;
+    margin-bottom: 4px;
+   
+}
+.featured_organizer .organizer_titile p{
+  color:var(--light-color);
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.featured_organizer .organizer_carsoul {
+  background-image: linear-gradient(rgba(13, 27, 62, 0.68),rgba(13, 27, 62, 0.68)) , url(./../images/Scroll\ Group\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  padding: 20px 70px;
+  height: 387px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .featured_organizer .organizer_carsoul .slick-track {
+  width: 100% !important;
+} */
+.featured_organizer .organizer_carsoul .organizer_content {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.featured_organizer .organizer_carsoul .organizer_content .organizer_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:20px 14px;
+  background-color:var(--text-color);
+  box-shadow: 0px 1px 4px #00000029;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  width: 195px !important;
+  height: 158px;
+
+}
+.featured_organizer .organizer_carsoul .organizer_content .organizer_card span{
+  font-size: 16px;
+  color:var(--basic-color);
+  text-transform: capitalize;
+}
+
+
+/* carsoul buttons */
+.featured_organizer .organizer_carsoul.slick-slider > button{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.featured_organizer .organizer_carsoul.slick-slider .slick-prev{
+  /* top: -12px;
+  left: -19px; */
+  left: 12%;
+  top: 43%;
+  background-color:var(--text-color);
+  border:none;
+  width: 54px;
+  height: 54px;
+}
+.featured_organizer .organizer_carsoul.slick-slider .slick-prev::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f104";
+  font-size:30px;
+  color:var(--share-color);
+  position: relative;
+  z-index: 10;
+  top: 0px;
+  left: 13px;
+  width: 64px;
+  height: 64px;
+}
+.featured_organizer .organizer_carsoul.slick-slider .slick-next{
+  right: 5%;
+  top: 44%;
+  background-color:var(--text-color);
+  border:none;
+  width: 54px;
+  height: 54px;
+}
+.featured_organizer .organizer_carsoul.slick-slider .slick-next::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f105";
+  font-size:30px;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  top: 0px;
+  right: 20px;
+  color:var(--share-color);
+ 
+}
+.featured_organizer .organizer_carsoul.slick-slider .slick-next:hover,
+.featured_organizer .organizer_carsoul.slick-slider .slick-prev:hover{
+  background-color:var(--share-color);
+}
+.featured_organizer .organizer_carsoul.slick-slider .slick-next:hover::after,
+.featured_organizer .organizer_carsoul.slick-slider .slick-prev:hover::before{
+  color: var(--text-color);
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
 /* live training section  */
 .live_trianing {
   background-color:var(--bg-color-1)
@@ -1093,18 +1219,10 @@ color: var(--text-color);
   right: 102px;
 }
 
-/* premium button */
-
-/* .featured_events_carsoul.slick-slider .slick-prev::before{
-background: yellow;
-color:brown
-} */
-
-
 /* featured evens section 2 */
 .featured_events_bg_2 .background {
   background-color: var(--main-color);
-  width: 978px;
+  width: 901px;
   height: 320px;
   position: absolute;
   overflow: hidden;
@@ -1134,6 +1252,16 @@ color: var(--text-color);
 .featured_events_bg_2  .slick-slider .slick-next::after{
 color: var(--text-color);
 }
+
+.featured_events_bg_2 .slick-slider .slick-prev:hover,
+.featured_events_bg_2 .slick-slider .slick-next:hover{
+  background-color:var(--text-color);
+}
+.featured_events_bg_2 .slick-slider .slick-prev:hover::before,
+.featured_events_bg_2 .slick-slider .slick-next:hover::after{
+ color: var(--main-color);
+}
+
 .featured_events_bg_2 .background img:first-of-type {
   position: absolute;
   right: 0px;
@@ -1142,6 +1270,16 @@ color: var(--text-color);
 .featured_events_bg_2 .background img:nth-of-type(2) {
   position: absolute;
   right: 20%;
+  top: 0px;
+}
+.featured_events_bg_2 .background img:nth-of-type(3) {
+  position: absolute;
+  right: 40%;
+  top: 0px;
+}
+.featured_events_bg_2 .background img:nth-of-type(4) {
+  position: absolute;
+  right: 60%;
   top: 0px;
 }
 .events_carsoul_section .slick-slider .slick-prev,
@@ -1156,33 +1294,49 @@ color: var(--text-color);
 .events_carsoul_section .title .info div{
   display: flex;
   align-items:center;
+  max-width: 50%;
 
 }
 .events_carsoul_section .title .info div h4 {
   display: inline-block;
-  margin-right: 85px;
+  margin-right: 70px;
+  font-size: 38px;
+  color:var(--basic-color);
 }
 .events_carsoul_section .title .info p {
-  max-width: 600px;
+  max-width: 612px;
   display: inline-block;
   font-weight: 600;
-  font-size: 20px;
-  color:var(--nav-text-color);
+  font-size: 19px;
+  color:var(--light-color);
 }
 .events_carsoul_section .title .button_filter button{
   background-color:transparent;
   border:transparent;
 }
 .events_carsoul_section .title .button_filter button a {
-  font-size: 25px;
-  font-weight: 700;
-  text-decoration: underline;
+  font-size: 22px;
+  font-weight: 400;
   text-transform: capitalize;
-  margin-right: 20px;
+  color:var(--cat-color);
+  position: relative;
+}
+.events_carsoul_section .title .button_filter button:nth-of-type(1) a::after {
+  content: "";
+  width: 35px;
+  height: 2px;
+  background-color:var(--cat-color);
+  position: absolute;
+  bottom: -6px;
+  left: 13px;
+}
+.events_carsoul_section .title .button_filter button:nth-of-type(1),
+.events_carsoul_section .title .button_filter button:nth-of-type(2){
+  margin-right: 50px;
 }
 .events_carsoul_section .title .button_filter button:nth-of-type(2) a,
 .events_carsoul_section .title .button_filter button:nth-of-type(3) a{
-  color:black;
+  color:#6A6A6A;
   text-decoration:none;
 }
 /* footer */
@@ -1190,33 +1344,77 @@ color: var(--text-color);
 footer{
   padding: 60px;
   background-color:var(--main-color);
-  color:white;
+  color:var(--text-color);
+  position: relative;
+  overflow: hidden;
 }
+footer>img {
+  position: absolute;
+  bottom: -39%;
+}
+footer > img:first-of-type {
+
+  right: -11%;
+}
+/* footer > img:last-of-type {
+  left: 0px;
+} */
 footer h6 {
-  font-size: 30px;
+  font-size: 17px;
   text-transform: capitalize;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
-footer .left_info img{
-  margin-bottom: 30px;
+footer .left_info > img{
+  margin-bottom: 24px;
 }
 footer .left_info p{
-font-size: 18px;
+font-size: 17px;
 padding: 10px;
 }
+footer .left_info .socails > span {
+  margin-right: 10px;
+}
+footer .left_info .socails .common {
+  background-image:url(./../images/Group\ 2374.svg);
+  background-repeat:no-repeat;
+  display: inline-block;
+
+}
+footer .left_info .socails .common a {
+  margin:5px 15px 13px;
+  display: inline-block;
+}
+footer .left_info .socails .common a:nth-of-type(1){
+  margin:5px 12px 13px;
+}
+footer .left_info .socails .common a:nth-of-type(2){
+  margin:5px 20px 13px;
+}
+footer .left_info .socails .common a:nth-of-type(3){
+  margin:5px 11px 13px;
+}
+footer .left_info .socails .common a:nth-of-type(4){
+  margin:5px 20px 13px;
+}
+footer .useful_links ,
+footer .contact_details {
+  padding-top: 25px;
+}
+
 footer .useful_links ul  {
   list-style: none;
+  padding: 0px;
 }
 footer .useful_links ul li{
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 footer .useful_links ul li i{
-  margin-right: 10px;
-  font-size: 16px;
+  margin-right: 6px;
+  font-size: 14px;
 }
 footer .useful_links ul li a{
-  font-size: 18px;
-  color:var(--text-color);
+  font-size: 14px;
+  color:#EFECEC;
   text-transform:capitalize;
 }
 footer .contact_details .contact_info {
@@ -1225,10 +1423,24 @@ footer .contact_details .contact_info {
 }
 footer .contact_details .contact_info img {
   margin-right: 10px;
+  width: 24px;
 }
-/* footer .contact_details .contact_info .info{
+footer .contact_details .contact_info .info{
+display: flex;
+flex-direction: column;
+margin-bottom: 33px;
+}
+footer .contact_details .contact_info .info span:first-of-type{
+  color:#8FCDA0;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+footer .contact_details .contact_info .info span:last-of-type{
+font-size: 14px;
+color:var(--text-color);
+}
 
-} */
 .copyright {
   background-color:#06112C;
 
@@ -1363,6 +1575,14 @@ footer .contact_details .contact_info img {
     right: 12%;
     top: -4%;
 }
+.featured_organizer .organizer_carsoul.slick-slider .slick-next{
+  top:63%;
+  right: 2%;
+}
+.featured_organizer .organizer_carsoul.slick-slider .slick-prev{
+  top:63%;
+  left:0%;
+}
 }
 @media (max-width: 1205px) and (min-width: 992px) {
   .navbar {
@@ -1426,6 +1646,22 @@ footer .contact_details .contact_info img {
 .featured_events .background{
   width: 100%;
 }
+.featured_organizer .organizer_carsoul.slick-slider .slick-next{
+  top:63%;
+}
+.featured_organizer .organizer_carsoul.slick-slider .slick-prev{
+  top:63%;
+  left:-1%;
+}
+.featured_events_bg_2 .title .info h4,
+.featured_events_bg_2 .title p{
+  color:var(--text-color);
+}
+.featured_events_bg_2 .background{
+  width: 100%;
+}
+
+
 }
 /* media query for laptops  */
 @media (min-width: 767px) and (max-width: 991px) {
@@ -1546,24 +1782,33 @@ footer .contact_details .contact_info img {
   .featured_events_bg_2 .slick-slider .slick-next
   {
     right: 5%;
-    border-color: white;
+    border-color: var(--text-color);
   }
   .featured_events .slick-slider .slick-prev,
   .live_trianing .slick-slider .slick-prev ,
   .featured_events_bg_2 .slick-slider .slick-prev  {
     right: 14%;
     top: -4%;
-    border-color: white;
+    border-color: var(--text-color);
+}
+.live_trianing .slick-slider .slick-next{
+  border-color: var(--main-color);
 
 }
-.live_trianing .slick-slider .slick-prev,
-.live_trianing .slick-slider .slick-next,
+.live_trianing .slick-slider .slick-prev{
+  border-color: var(--main-color);
+
+}
+
 .live_trianing .title a {
-  color:var(--main-color);
+  color:var(--cat-color);
 }
 .featured_events_bg_2 .title .info h4,
 .featured_events_bg_2 .title p{
   color: var(--text-color);
+}
+.featured_events_bg_2 .background{
+  width: 100%;
 }
 
 
@@ -1579,6 +1824,17 @@ footer .contact_details .contact_info img {
 .events_carsoul_section .title .info{
   flex-direction: column;
   align-items:flex-end;
+}
+.events_carsoul_section .title .info div{
+  max-width: 100%;
+}
+.featured_organizer .organizer_carsoul.slick-slider .slick-next{
+  top:63%;
+  right: 4%;
+}
+.featured_organizer .organizer_carsoul.slick-slider .slick-prev{
+  top:63%;
+  left:-1%;
 }
 }
 
@@ -1739,6 +1995,26 @@ color: var(--text-color);
 }
 .featured_events, .live_trianing, .featured_events_bg_2{
   padding: 60px 44px;
+}
+
+.featured_organizer .organizer_carsoul.slick-slider .slick-next{
+  top:63%;
+}
+.featured_organizer .organizer_carsoul.slick-slider .slick-prev{
+  top:63%;
+  left:-1%;
+}
+.featured_events_bg_2 .background{
+  width: 100%;
+}
+.featured_events_bg_2 .background img:nth-of-type(3) {
+  display: none;
+ }
+ .featured_events_bg_2 .background img:nth-of-type(4) {
+  display: none;
+ }
+ .events_carsoul_section .title .info div{
+  max-width: 100%;
 }
 }
 /* mobile screen */
@@ -1909,6 +2185,16 @@ color: var(--text-color);
 .featured_events_bg_2 .title .info h4{
   font-size: 30px;
 }
+.featured_events_bg_2 .background{
+  width: 100%;
+}
+.featured_events_bg_2 .background img:nth-of-type(3) {
+ display: none;
+}
+.featured_events_bg_2 .background img:nth-of-type(4) {
+ display: none;
+}
+
 .featured_events_bg_2 .title .info h4,
 .featured_events_bg_2 .title p{
   color:var(--text-color);
@@ -1935,16 +2221,24 @@ color: var(--text-color);
   right: 30px;
 }
 
+.events_carsoul_section .title .info div{
+  max-width: 100%;
+}
 
-.events_carsoul_section .title .info div h4{
-  font-size: 28px;
+.events_carsoul_section .title .button_filter button:nth-of-type(1), .events_carsoul_section .title .button_filter button:nth-of-type(2) {
+margin-right: 20px;
 }
-.events_carsoul_section .title .info p{
-  font-size: 15px;
-}
-.events_carsoul_section .title .button_filter button a{
+
+
+.events_carsoul_section .title .button_filter button{
   margin-right: 0px;
-  font-size: 15px;
+
+}
+.events_carsoul_section .title .button_filter button a {
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
 }
 .events_carsoul_section .title .info div:first-of-type{
   flex-direction: column;
@@ -2105,7 +2399,9 @@ footer{
   height: 31px;
   transform: translate(-44%,15%);
 }
-
+.featured_events_bg_2 .background{
+  width: 100%;
+}
 }
 /*  media query for  screens less than 320 px */
 @media (max-width: 320px) {
@@ -2284,6 +2580,16 @@ footer{
 }
 
 /* special mediaquery  */
+@media (min-width: 1200px)  and (max-width: 1265px){
+  .featured_events_bg_2 .title .info h4,
+.featured_events_bg_2 .title p{
+  color:var(--text-color);
+}
+.featured_events_bg_2 .background{
+  width: 100%;
+}
+
+}
 @media (min-width: 1210px)  and (max-width: 1600px){
   .featured_events .title a ,
   .live_trianing .title a ,
