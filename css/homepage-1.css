@@ -1,0 +1,180 @@
+.main-wrapper ul li button{
+    background-color:#0583D8;
+}
+.accordion-flush .accordion-item .accordion-button:hover a {
+    color:white;
+}
+.browsing{
+    padding: 55px 70px;
+    background-color: #EBF7F6;
+}
+.browsing .title{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+}
+.browsing .title h4 {
+    font-size: 38px;
+    text-transform: capitalize;
+}
+.browsing .title p{
+    width: 40%;
+    color:#9F9F9F;
+}
+.browsing .title a {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #0583D8;
+
+}
+.browsing .country {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.browsing .country span {
+    margin-top: 10px;
+    font-size: 21px;
+    text-transform: capitalize;
+
+}
+
+.live_trianing .title .info h4,
+.live_trianing .title p{
+    color:white;
+}
+.events_carsoul_section {
+    background-color: #EBF7F6;
+}
+.common_cards .medical_card .medical_card_info .header_info{
+
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.specail_card {
+    background-image:url("./../images/news-18-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 328px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 3px #00000029;
+    cursor: pointer;
+}.specail_card .icons {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 21px;
+    padding-right: 21px;
+}
+.specail_card .icons i{
+    display: block;
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #03AEB2;
+    background-color: white;
+    border-color: #03AEB2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 10px;
+}
+.specail_card .icons i:nth-of-type(1):hover, 
+.specail_card .icons  i:nth-of-type(2):hover {
+    background: #0583D8;
+    color: white;
+}
+
+.specail_body{
+    background-color:#0d1b3ead;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+.specail_body .header_info{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    color: white;
+}
+.specail_body .header_info h5 {
+    padding: 0px;
+    font-size: 19px;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.specail_body .header_info span {
+    text-transform: capitalize;
+}
+.specail_body .booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.specail_body .booking span {
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+}
+.specail_body .booking button {
+    border: 1px solid var(--book-button-color);
+    border-radius: 50px;
+    padding: 6px 17px 4px;
+    background-color:white;
+}
+.specail_body .booking button a {
+    color: var(--book-button-color);
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.specail_body .booking button:hover {
+    background-color: #02CB9B;
+}
+.specail_body  .booking button:hover a {
+    color: white;
+}
+
+
+/* background of sections */
+.live_trianing {
+    position: relative;
+    background-color:white;
+}
+.live_trianing .backgroud {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 297px;
+    width: 100%;
+    background-color:#0D1B3E;
+}
+.live_trianing img:first-of-type {
+    position: absolute;
+    bottom: 0px;
+    left:-10%;
+
+}
+.live_trianing img:last-of-type {
+    position: absolute;
+    bottom: 0px;
+    right:-10%;
+}
+
+.second_browsing {
+    background-color:white;
+}
+
+.recorder_trainig_section .background {
+   top: 31%;
+}

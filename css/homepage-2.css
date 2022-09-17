@@ -93,7 +93,8 @@ padding: 8px 10px 9px;
     -o-border-radius:50%;
     padding: 10px;
 }
-.common_cards .medical_card:hover .image i{
+.common_cards .medical_card .image i:nth-of-type(1):hover,
+.common_cards .medical_card .image i:nth-of-type(2):hover{
     background: #0583D8;
     color:white;
 }
@@ -114,4 +115,52 @@ padding: 8px 10px 9px;
 }
 .common_cards .medical_card:hover .medical_card_info .booking button a{
     color:white;
+}
+
+.live_trianing .title{
+    text-align: center;
+}
+.recorder_trianing{
+    justify-content: center;
+    align-items:center;
+}
+.recorder_trainig_section{
+    background-color:var(--main-color);
+}
+.recorder_trainig_section .background img{
+    left: 0px;
+    right: 0px;
+    bottom:0px
+}
+.recorder_trainig_section .slick-slider .slick-prev{
+    right: 131%;
+    top: 80%;
+   border-color:white;
+}
+.recorder_trainig_section .slick-slider .slick-next{
+    right: 125%;
+    top: 80%;
+   border-color:white;
+}
+.recorder_trainig_section .slick-slider .slick-prev::before,
+.recorder_trainig_section .slick-slider .slick-next::after{
+    color:white;
+}
+.slider_section .slider_details .choices{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) and (min-width: 320px){
+    .recorder_trainig_section .slick-slider .slick-prev{
+        right: 20%;
+        top: -15%;
+    }
+    .recorder_trainig_section .slick-slider .slick-next{
+        right: 10%;
+        top: -15%;
+    }
 }
