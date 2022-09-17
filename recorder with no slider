@@ -1,0 +1,144 @@
+<section class="featured_events common_cards">
+  <!-- background shapes image -->
+  <div class="background">
+    <img src="./images/footer-shape-2-1.png" alt="shape 2 image">
+  </div>
+   <!-- heading -->
+   <div class="row recorder_trianing">
+    <div class="col-md-3 col-sm-12">
+      <div class="title">
+        <div class="info">
+          <h4>Recorded training </h4>
+        </div>
+        <p>
+          The passage experienced a surge in   
+        </p>
+      </div>
+    </div>
+    <div class="col-md-9 col-sm-12">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-xl-4">
+          <div class="card-content">
+            <div class=" card  medical_card">
+             <div class="image">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-share"></i>
+             </div>
+              <div class="card-body medical_card_info">
+                <div class="header_info">
+                  <h5>american institute</h5>
+                </div>
+                <div class="category">
+                  <div>
+                    <span>recorded Course</span>
+                  </div>
+                  
+                  <span>libya</span>
+                </div>
+                <div class="share">
+                </div>
+                <div class="list">
+                  <div class="list_info">
+                   <div>
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <span>By :American course </span>
+                   </div>
+                    <div class="date">
+                      <span>7 Feb To 2 Aug </span>
+                    </div>
+                  </div>
+                  
+                <div class="booking">
+                  <span> <span>$</span> 19900 L.E</span>
+                  <button class="btn"> <a href="#"> Book now </a></button>
+                </div>
+              </div>
+            </div> 
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xl-4">
+          <div class="card-content">
+            <div class=" card  medical_card">
+             <div class="image">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-share"></i>
+             </div>
+              <div class="card-body medical_card_info">
+                <div class="header_info">
+                  <h5>american institute</h5>
+                </div>
+                <div class="category">
+                  <div>
+                    <span>recorded Course</span>
+                  </div>
+                  
+                  <span>libya</span>
+                </div>
+                <div class="share">
+                </div>
+                <div class="list">
+                  <div class="list_info">
+                   <div>
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <span>By :American course </span>
+                   </div>
+                    <div class="date">
+                      <span>7 Feb To 2 Aug </span>
+                    </div>
+                  </div>
+                  
+                <div class="booking">
+                  <span> <span>$</span> 19900 L.E</span>
+                  <button class="btn"> <a href="#"> Book now </a></button>
+                </div>
+              </div>
+            </div> 
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xl-4">
+          <div class="card-content">
+            <div class=" card  medical_card">
+             <div class="image">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-share"></i>
+             </div>
+              <div class="card-body medical_card_info">
+                <div class="header_info">
+                  <h5>american institute</h5>
+                </div>
+                <div class="category">
+                  <div>
+                    <span>recorded Course</span>
+                  </div>
+                  
+                  <span>libya</span>
+                </div>
+                <div class="share">
+                </div>
+                <div class="list">
+                  <div class="list_info">
+                   <div>
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <span>By :American course </span>
+                   </div>
+                    <div class="date">
+                      <span>7 Feb To 2 Aug </span>
+                    </div>
+                  </div>
+                  
+                <div class="booking">
+                  <span> <span>$</span> 19900 L.E</span>
+                  <button class="btn"> <a href="#"> Book now </a></button>
+                </div>
+              </div>
+            </div> 
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+</section>
