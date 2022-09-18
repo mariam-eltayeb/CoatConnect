@@ -7,6 +7,7 @@ $('.medical_carsoule').slick({
     autoplaySpeed: 2000,
     arrows: true,
     responsive: [
+      
         {
             breakpoint: 1250,
             settings: {
@@ -17,7 +18,7 @@ $('.medical_carsoule').slick({
             }
           },
         {
-            breakpoint: 950,
+            breakpoint: 995,
             settings: {
               arrows: true,
               centerMode: true,
@@ -26,7 +27,7 @@ $('.medical_carsoule').slick({
             }
           },
         {
-          breakpoint: 600,
+          breakpoint: 650,
           settings: {
             arrows: true,
             centerMode: true,
