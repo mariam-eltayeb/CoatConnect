@@ -704,10 +704,17 @@ a {
   top: 0%;
   left: 0%;
 }
-.featured_events .background img {
+.featured_events .background img:first-of-type{
   position: absolute;
   right: 0px;
   top: 0px;
+}
+.featured_events .background img:nth-of-type(2){
+  position: absolute;
+  right: -40%;
+  bottom: -321%;
+  z-index: 10;
+
 }
 
 .featured_events .title,
@@ -842,7 +849,8 @@ color:var(--text-color);
 }
 .common_cards .medical_card .image  {
   height: 225px;
-  background-image:linear-gradient(#70707060,#70707060),url(./../images/news-18-1@2x.png);
+  width: 100%;
+  background-image:linear-gradient(#70707060,#70707060),url(./../images/cardImages/news-18@2x.png);
   background-size:cover;
   background-repeat:no-repeat;
   position: relative;
@@ -851,8 +859,17 @@ color:var(--text-color);
  display: flex;
  align-items:center;
  justify-content: center;
+background-position:center center ;
 }
 
+.common_cards .medical_card .image.first_card_image{
+  background-image:linear-gradient(#0d1b3e65,#0d1b3e65),url(./../images/cardImages/Scroll\ Group\ 7@2x.png);
+
+}
+.common_cards .medical_card .image.secound_card_image{
+  background-image:linear-gradient(#0d1b3e65,#0d1b3e65),url(./../images/cardImages/Scroll\ Group\ 8@2x.png);
+
+}
 .common_cards .medical_card .image i {
   font-size:50px;
   color:var(--text-color);
@@ -915,7 +932,7 @@ color:var(--text-color);
  
 }
 .common_cards .medical_card .medical_card_info{
-  padding:21px 12px 9px;
+  padding:21px 20px 15px;
 }
 .common_cards .medical_card .medical_card_info .header_info {
   margin-bottom: 12px;
@@ -957,7 +974,7 @@ color:var(--text-color);
   min-width: 181px;
   display: inline-block;
   padding-left: 12px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .common_cards .medical_card .medical_card_info .category{
@@ -1016,6 +1033,13 @@ color:var(--text-color);
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.common_cards .medical_card .medical_card_info .share .icons i:nth-of-type(1):hover,
+  .common_cards .medical_card .medical_card_info .share .icons i:nth-of-type(2):hover{
+
+  background-color:#0583D8;
+  color:white;
+}
+
 .common_cards .medical_card .medical_card_info .share .icons span {
   padding-left: 5px;
   padding-right: 12px;
@@ -1069,8 +1093,11 @@ color:var(--text-color);
 .common_cards .medical_card .medical_card_info .booking button {
   border: 1px solid var(--book-button-color);
   border-radius: 50px;
-  padding: 6px 26px 5px;
+  padding: 5px 26px 5px;
 
+}
+.common_cards .medical_card .medical_card_info .booking button:hover {
+  background-color:var(--book-button-color);
 }
 .common_cards .medical_card .medical_card_info .booking button a{
   color: var(--book-button-color);
@@ -1078,6 +1105,9 @@ color:var(--text-color);
   text-transform: capitalize;
   font-size: 15px;
 
+}
+.common_cards .medical_card .medical_card_info .booking button:hover a {
+  color:white
 }
 
 
@@ -1098,13 +1128,14 @@ color:var(--text-color);
   margin-bottom: 25px;
 }
 .featured_organizer .organizer_carsoul {
-  background-image: linear-gradient(rgba(13, 27, 62, 0.68),rgba(13, 27, 62, 0.68)) , url(./../images/Scroll\ Group\ 1.png);
+  background-image: linear-gradient(#002f4fd3,#002f4fd3) , url(./../images/Scroll\ Group\ 9@2x.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   background-position: center;
   padding: 20px 70px;
-  height: 387px;
+  min-height: 387px;
+  height:100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1133,6 +1164,10 @@ color:var(--text-color);
   width: 195px !important;
   height: 158px;
 
+}
+.featured_organizer .organizer_carsoul .organizer_content .organizer_card img {
+  width: 100%;
+  height:100%;
 }
 .featured_organizer .organizer_carsoul .organizer_content .organizer_card span{
   font-size: 16px;
@@ -1174,7 +1209,7 @@ color:var(--text-color);
   height: 64px;
 }
 .featured_organizer .organizer_carsoul.slick-slider .slick-next{
-  right: 5%;
+  right: -3%;
   top: 44%;
   background-color:var(--text-color);
   border:none;
@@ -1301,13 +1336,13 @@ color: var(--text-color);
   max-width: 50%;
 
 }
-.events_carsoul_section .title .info div h4 {
+.events_carsoul_section .title .info div .headings h4 {
   display: inline-block;
   margin-right: 70px;
   font-size: 38px;
   color:var(--basic-color);
 }
-.events_carsoul_section .title .info p {
+.events_carsoul_section .title .info .headings p {
   max-width: 612px;
   display: inline-block;
   font-weight: 600;
@@ -1428,6 +1463,9 @@ footer .contact_details .contact_info {
 footer .contact_details .contact_info img {
   margin-right: 10px;
   width: 24px;
+}
+footer .contact_details .letter img{
+width: 35px;
 }
 footer .contact_details .contact_info .info{
 display: flex;
@@ -1564,7 +1602,7 @@ color:var(--text-color);
     font-weight: 600;
   }
   .common_cards .medical_card .medical_card_info .booking button{
-    padding: 6px 17px 4px;
+    padding: 4px 11px 4px;
   }
   .featured_events .title a ,
   .live_trianing .title a ,
@@ -1580,7 +1618,7 @@ color:var(--text-color);
     top: -4%;
 }
 .featured_organizer .organizer_carsoul.slick-slider .slick-next{
-  top:63%;
+  top:65%;
   right: 2%;
 }
 .featured_organizer .organizer_carsoul.slick-slider .slick-prev{
@@ -1947,7 +1985,7 @@ color:var(--text-color);
     font-size: 33px;
   }
   .common_cards .medical_card .medical_card_info .booking button {
-    padding: 6px 10px 5px;
+    padding: 5px 10px 5px;
   }
   .featured_events .title a{
     right: 40px;
@@ -2593,6 +2631,7 @@ footer{
   width: 100%;
 }
 
+
 }
 @media (min-width: 1210px)  and (max-width: 1600px){
   .featured_events .title a ,
@@ -2610,6 +2649,10 @@ footer{
     right: 11%;
     top: -4%;
    
+}
+footer .left_info p {
+ 
+  max-height: 165px;
 }
 
 
