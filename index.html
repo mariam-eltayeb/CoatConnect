@@ -12,8 +12,16 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- slick cdn link -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <!-- filtered tabs -->
+
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+   <link rel="stylesheet" href="/resources/demos/style.css">
+ 
     <!-- stylesheet  -->
+    <link rel="stylesheet" href="./homepage-2.html">
+    <link rel="stylesheet" href="./homepage-1.html">
     <link rel="stylesheet" href="./css/style.css">
+   
     <!-- icon -->
     <link rel="icon" href="./images/CoatConnect Format Gredient H@3x-1.png">
     <title> Home page </title>
@@ -965,6 +973,8 @@
 
   <!-- featured events  -->
   <section class="featured_events common_cards">
+    <img src="./images/background/shape-47.png" alt=" shape background">
+
     <!-- background shapes image -->
     <div class="background">
       <img src="./images/footer-shape-2-1.png" alt="shape 2 image">
@@ -1918,6 +1928,7 @@
 
 <!-- featured events  section -->
 <section class=" featured_events_bg_2 common_cards">
+
   <!-- background shapes image -->
   <div class="background">
     <img src="./images/footer-shape-2-1.png" alt="shape 2 image">
@@ -2373,34 +2384,657 @@
 
 
 <!-- events section  -->
-<section class="live_trianing  events_carsoul_section common_cards">
+<section class="live_trianing filtered  common_cards">
 <!-- heading -->
   <div class="title">
     <div class="info">
-      <div>
+      <div class="headings">
         <h4>events</h4>
       <p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as</p>
 
       </div>
       <!-- filtered buttons -->
-        <div class="button_filter">
-          <button>
-            <a href="#">latest</a>
-          </button>
-          <button>
-            <a href="#">best selling </a>
-          </button>
-          <button>
-            <a href="#">coming</a>
-          </button>
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">latest <hr></a></li>
+          <li><a href="#tabs-2">Best Selling <hr></a></li>
+          <li><a href="#tabs-3">Coming <hr></a></li>
+        </ul>
+        <div id="tabs-1">
+          <div class="row mx-0">
+            <div class="col-md-6 col-sm-12 col-xl-4 col-xxl-3" >
+              <div class="card-content">
+                <div class=" card  medical_card">
+                 <div class="image">
+                  <i class="fa-solid fa-link"></i>
+                 </div>
+                  <div class="card-body medical_card_info">
+                    <div class="header_info">
+                      <div class="date">
+                        <span>9</span>
+                        <span>Nov</span>
+                        <span>2020</span>
+                      </div>
+                      <h5>Bascics Using BBcs Software Developments</h5>
+                    </div>
+                    <div class="category">
+                      <div>
+                        <button> Dentist</button>
+                        <button> online</button>
+                      </div>
+                      <button>Premium</button>
+                    </div>
+                    <div class="share">
+                      <h6>CME Points</h6>
+                      <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>save</span>
+                        <i class="fa-solid fa-share"></i>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="list_info">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>By : Organizer Name</span>
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Work , USA</span>
+            
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>9 Nov To 12 Nov</span>
+                        <div class="feature">
+                          <i class="fa-solid fa-circle-check"></i>
+                          <span>featured</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="booking">
+                      <span> <span>$</span> 19900 L.E</span>
+                      <button class="btn"> <a href="#"> Book now </a></button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 col-xxl-3">
+              <div class="card-content">
+                <div class=" card  medical_card">
+                 <div class="image">
+                  <i class="fa-solid fa-link"></i>
+                  <span>Premium</span>
+                 </div>
+                  <div class="card-body medical_card_info">
+                    <div class="header_info">
+                      <div class="date">
+                        <span>9</span>
+                        <span>Nov</span>
+                        <span>2020</span>
+                      </div>
+                      <h5>Bascics Using BBcs Software Developments</h5>
+                    </div>
+                    <div class="category">
+                      <div>
+                        <button> Dentist</button>
+                        <button> online</button>
+                      </div>
+                      <button>Premium</button>
+                    </div>
+                    <div class="share">
+                      <h6>CME Points</h6>
+                      <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>save</span>
+                        <i class="fa-solid fa-share"></i>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="list_info">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>By : Organizer Name</span>
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Work , USA</span>
+            
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>9 Nov To 12 Nov</span>
+                      </div>
+                    </div>
+                    <div class="booking">
+                      <span> <span>$</span> 19900 L.E</span>
+                      <button class="btn"> <a href="#"> Book now </a></button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 col-xxl-3">
+              <div class="card-content">
+                <div class=" card  medical_card">
+                 <div class="image">
+                  <i class="fa-solid fa-link"></i>
+                 </div>
+                  <div class="card-body medical_card_info">
+                    <div class="header_info">
+                      <div class="date">
+                        <span>9</span>
+                        <span>Nov</span>
+                        <span>2020</span>
+                      </div>
+                      <h5>Bascics Using BBcs Software Developments</h5>
+                    </div>
+                    <div class="category">
+                      <div>
+                        <button> Dentist</button>
+                        <button> online</button>
+                      </div>
+                      <button>Premium</button>
+                    </div>
+                    <div class="share">
+                      <h6>CME Points</h6>
+                      <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>save</span>
+                        <i class="fa-solid fa-share"></i>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="list_info">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>By : Organizer Name</span>
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Work , USA</span>
+            
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>9 Nov To 12 Nov</span>
+                        <div class="feature">
+                          <i class="fa-solid fa-circle-check"></i>
+                          <span>featured</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="booking">
+                      <span> <span>$</span> 19900 L.E</span>
+                      <button class="btn"> <a href="#"> Book now </a></button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 col-xxl-3">
+              <div class="card-content">
+                <div class=" card  medical_card">
+                 <div class="image">
+                  <i class="fa-solid fa-link"></i>
+                  <span>Premium</span>
+                 </div>
+                  <div class="card-body medical_card_info">
+                    <div class="header_info">
+                      <div class="date">
+                        <span>9</span>
+                        <span>Nov</span>
+                        <span>2020</span>
+                      </div>
+                      <h5>Bascics Using BBcs Software Developments</h5>
+                    </div>
+                    <div class="category">
+                      <div>
+                        <button> Dentist</button>
+                        <button> online</button>
+                      </div>
+                      <button>Premium</button>
+                    </div>
+                    <div class="share">
+                      <h6>CME Points</h6>
+                      <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>save</span>
+                        <i class="fa-solid fa-share"></i>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="list_info">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>By : Organizer Name</span>
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Work , USA</span>
+            
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>9 Nov To 12 Nov</span>
+                      </div>
+                    </div>
+                    <div class="booking">
+                      <span> <span>$</span> 19900 L.E</span>
+                      <button class="btn"> <a href="#"> Book now </a></button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+          </div>
+        <div id="tabs-2">
+          <div class="row mx-0">
+            <div class="col-md-6 col-sm-12 col-xl-4 col-xxl-3">
+              <div class="card-content">
+                <div class=" card  medical_card">
+                 <div class="image">
+                  <i class="fa-solid fa-link"></i>
+                 </div>
+                  <div class="card-body medical_card_info">
+                    <div class="header_info">
+                      <div class="date">
+                        <span>9</span>
+                        <span>Nov</span>
+                        <span>2020</span>
+                      </div>
+                      <h5>Bascics Using BBcs Software Developments</h5>
+                    </div>
+                    <div class="category">
+                      <div>
+                        <button> Dentist</button>
+                        <button> online</button>
+                      </div>
+                      <button>Premium</button>
+                    </div>
+                    <div class="share">
+                      <h6>CME Points</h6>
+                      <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>save</span>
+                        <i class="fa-solid fa-share"></i>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="list_info">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>By : Organizer Name</span>
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Work , USA</span>
+            
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>9 Nov To 12 Nov</span>
+                        <div class="feature">
+                          <i class="fa-solid fa-circle-check"></i>
+                          <span>featured</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="booking">
+                      <span> <span>$</span> 19900 L.E</span>
+                      <button class="btn"> <a href="#"> Book now </a></button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 col-xxl-3">
+              <div class="card-content">
+                <div class=" card  medical_card">
+                 <div class="image">
+                  <i class="fa-solid fa-link"></i>
+                  <span>Premium</span>
+                 </div>
+                  <div class="card-body medical_card_info">
+                    <div class="header_info">
+                      <div class="date">
+                        <span>9</span>
+                        <span>Nov</span>
+                        <span>2020</span>
+                      </div>
+                      <h5>Bascics Using BBcs Software Developments</h5>
+                    </div>
+                    <div class="category">
+                      <div>
+                        <button> Dentist</button>
+                        <button> online</button>
+                      </div>
+                      <button>Premium</button>
+                    </div>
+                    <div class="share">
+                      <h6>CME Points</h6>
+                      <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>save</span>
+                        <i class="fa-solid fa-share"></i>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="list_info">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>By : Organizer Name</span>
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Work , USA</span>
+            
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>9 Nov To 12 Nov</span>
+                      </div>
+                    </div>
+                    <div class="booking">
+                      <span> <span>$</span> 19900 L.E</span>
+                      <button class="btn"> <a href="#"> Book now </a></button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 col-xxl-3">
+              <div class="card-content">
+                <div class=" card  medical_card">
+                 <div class="image">
+                  <i class="fa-solid fa-link"></i>
+                 </div>
+                  <div class="card-body medical_card_info">
+                    <div class="header_info">
+                      <div class="date">
+                        <span>9</span>
+                        <span>Nov</span>
+                        <span>2020</span>
+                      </div>
+                      <h5>Bascics Using BBcs Software Developments</h5>
+                    </div>
+                    <div class="category">
+                      <div>
+                        <button> Dentist</button>
+                        <button> online</button>
+                      </div>
+                      <button>Premium</button>
+                    </div>
+                    <div class="share">
+                      <h6>CME Points</h6>
+                      <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>save</span>
+                        <i class="fa-solid fa-share"></i>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="list_info">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>By : Organizer Name</span>
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Work , USA</span>
+            
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>9 Nov To 12 Nov</span>
+                        <div class="feature">
+                          <i class="fa-solid fa-circle-check"></i>
+                          <span>featured</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="booking">
+                      <span> <span>$</span> 19900 L.E</span>
+                      <button class="btn"> <a href="#"> Book now </a></button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 col-xxl-3">
+              <div class="card-content">
+                <div class=" card  medical_card">
+                 <div class="image">
+                  <i class="fa-solid fa-link"></i>
+                  <span>Premium</span>
+                 </div>
+                  <div class="card-body medical_card_info">
+                    <div class="header_info">
+                      <div class="date">
+                        <span>9</span>
+                        <span>Nov</span>
+                        <span>2020</span>
+                      </div>
+                      <h5>Bascics Using BBcs Software Developments</h5>
+                    </div>
+                    <div class="category">
+                      <div>
+                        <button> Dentist</button>
+                        <button> online</button>
+                      </div>
+                      <button>Premium</button>
+                    </div>
+                    <div class="share">
+                      <h6>CME Points</h6>
+                      <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>save</span>
+                        <i class="fa-solid fa-share"></i>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="list_info">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>By : Organizer Name</span>
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Work , USA</span>
+            
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>9 Nov To 12 Nov</span>
+                      </div>
+                    </div>
+                    <div class="booking">
+                      <span> <span>$</span> 19900 L.E</span>
+                      <button class="btn"> <a href="#"> Book now </a></button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          
+          </div>
         </div>
+        <div id="tabs-3">
+          <div class="row mx-0">
+            <div class="col-md-6 col-sm-12 col-xl-4 col-xxl-3">
+              <div class="card-content">
+                <div class=" card  medical_card">
+                 <div class="image">
+                  <i class="fa-solid fa-link"></i>
+                 </div>
+                  <div class="card-body medical_card_info">
+                    <div class="header_info">
+                      <div class="date">
+                        <span>9</span>
+                        <span>Nov</span>
+                        <span>2020</span>
+                      </div>
+                      <h5>Bascics Using BBcs Software Developments</h5>
+                    </div>
+                    <div class="category">
+                      <div>
+                        <button> Dentist</button>
+                        <button> online</button>
+                      </div>
+                      <button>Premium</button>
+                    </div>
+                    <div class="share">
+                      <h6>CME Points</h6>
+                      <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>save</span>
+                        <i class="fa-solid fa-share"></i>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="list_info">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>By : Organizer Name</span>
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Work , USA</span>
+            
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>9 Nov To 12 Nov</span>
+                        <div class="feature">
+                          <i class="fa-solid fa-circle-check"></i>
+                          <span>featured</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="booking">
+                      <span> <span>$</span> 19900 L.E</span>
+                      <button class="btn"> <a href="#"> Book now </a></button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 col-xxl-3">
+              <div class="card-content">
+                <div class=" card  medical_card">
+                 <div class="image">
+                  <i class="fa-solid fa-link"></i>
+                  <span>Premium</span>
+                 </div>
+                  <div class="card-body medical_card_info">
+                    <div class="header_info">
+                      <div class="date">
+                        <span>9</span>
+                        <span>Nov</span>
+                        <span>2020</span>
+                      </div>
+                      <h5>Bascics Using BBcs Software Developments</h5>
+                    </div>
+                    <div class="category">
+                      <div>
+                        <button> Dentist</button>
+                        <button> online</button>
+                      </div>
+                      <button>Premium</button>
+                    </div>
+                    <div class="share">
+                      <h6>CME Points</h6>
+                      <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>save</span>
+                        <i class="fa-solid fa-share"></i>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="list_info">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>By : Organizer Name</span>
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Work , USA</span>
+            
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>9 Nov To 12 Nov</span>
+                      </div>
+                    </div>
+                    <div class="booking">
+                      <span> <span>$</span> 19900 L.E</span>
+                      <button class="btn"> <a href="#"> Book now </a></button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 col-xxl-3">
+              <div class="card-content">
+                <div class=" card  medical_card">
+                 <div class="image">
+                  <i class="fa-solid fa-link"></i>
+                 </div>
+                  <div class="card-body medical_card_info">
+                    <div class="header_info">
+                      <div class="date">
+                        <span>9</span>
+                        <span>Nov</span>
+                        <span>2020</span>
+                      </div>
+                      <h5>Bascics Using BBcs Software Developments</h5>
+                    </div>
+                    <div class="category">
+                      <div>
+                        <button> Dentist</button>
+                        <button> online</button>
+                      </div>
+                      <button>Premium</button>
+                    </div>
+                    <div class="share">
+                      <h6>CME Points</h6>
+                      <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>save</span>
+                        <i class="fa-solid fa-share"></i>
+                      </div>
+                    </div>
+                    <div class="list">
+                      <div class="list_info">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <span>By : Organizer Name</span>
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>New Work , USA</span>
+            
+                      </div>
+                      <div class="list_info">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>9 Nov To 12 Nov</span>
+                        <div class="feature">
+                          <i class="fa-solid fa-circle-check"></i>
+                          <span>featured</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="booking">
+                      <span> <span>$</span> 19900 L.E</span>
+                      <button class="btn"> <a href="#"> Book now </a></button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+           
+          </div> 
+        </div>
+      </div>
+    </div>
     </div>
 
   </div>
   <!-- cards -->
-  <section class="events_cards">
+  <!-- <section class="events_cards">
     <div class="row mx-0">
-      <div class="col-md-4 col-sm-12 col-xl-3">
+      <div class="col-md-6 col-sm-12 col-xl-4">
         <div class="card-content">
           <div class=" card  medical_card">
            <div class="image">
@@ -2457,7 +3091,7 @@
           </div> 
         </div>
       </div>
-      <div class="col-md-4 col-sm-12 col-xl-3">
+      <div class="col-md-6 col-sm-12 col-xl-3">
         <div class="card-content">
           <div class=" card  medical_card">
            <div class="image">
@@ -2511,7 +3145,7 @@
           </div> 
         </div>
       </div>
-      <div class="col-md-4 col-sm-12 col-xl-3">
+      <div class="col-md-6 col-sm-12 col-xl-3">
         <div class="card-content">
           <div class=" card  medical_card">
            <div class="image">
@@ -2568,7 +3202,7 @@
           </div> 
         </div>
       </div>
-      <div class="col-md-4 col-sm-12 col-xl-3">
+      <div class="col-md-6 col-sm-12 col-xl-3">
         <div class="card-content">
           <div class=" card  medical_card">
            <div class="image">
@@ -2623,7 +3257,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --> -->
  
 </section>
 
@@ -2738,5 +3372,13 @@
 <script src="./js/main.js"></script>
 <!--organizer slider  -->
 <script src="./js/slider.js"></script>
+<!-- filtered tabs -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
 </body>
 </html>
