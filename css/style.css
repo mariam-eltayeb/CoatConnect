@@ -599,6 +599,7 @@ a {
   text-transform: capitalize;
   font-weight: 600;
   font-size: 21px;
+  cursor:pointer;
 }
 .slider_section .slider_details .choices  input{
   width: 12px;

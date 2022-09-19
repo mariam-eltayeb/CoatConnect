@@ -190,6 +190,15 @@ padding: 8px 10px 9px;
 .navbar-collapse{
     overflow: visible !important;
 }
+.featured_events {
+    position: relative;
+    overflow: hidden;
+}
+.featured_events img {
+    position: absolute;
+    right: -6%;
+    bottom: -18%;
+}
 
 /* evets section */
 .events_carsoul_section .title .info{
@@ -270,6 +279,29 @@ padding: 8px 10px 9px;
     background-color:transparent;
     border:none;
 }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    position: relative;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+    cursor: pointer !important;
+}
+
+#tabs ul li a hr {
+    display: none ;
+    height: 2px;
+    color: #0583D8;
+    opacity: 1;
+    margin: 0px;
+    width: 38px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2px ;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor hr {
+    display: block !important;
+}
 @media (max-width: 1200px) and (min-width: 320px){
     .recorder_trainig_section .slick-slider .slick-prev{
         right: 20%;
@@ -284,6 +316,7 @@ padding: 8px 10px 9px;
     .filtered .title .info .headings {
         display: flex;
         width: 100%;
+        flex-direction: column;
         margin-bottom: 37px;
     }
     .ui-tabs .ui-tabs-nav {
@@ -293,6 +326,7 @@ padding: 8px 10px 9px;
 @media (max-width: 997px) and (min-width: 768px){
 .filtered .title .info .headings {
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 37px;
 }
@@ -301,12 +335,19 @@ top: -6%;
 }
 }
 @media (max-width: 767px) and (min-width: 320px){
-    .filtered .title .info .headings {
+    .filtered .title .info .headings{
         display: flex;
+        flex-direction: column;
         width: 100%;
-        margin-bottom: 37px;
+        margin-bottom: 90px !important;
     }
     .ui-tabs .ui-tabs-nav {
-        top: -3%;
-        }
+    top: -8% !important;
+    }
+    .live_trianing .title{
+        padding: 0px;
+    }
+    .ui-tabs .ui-tabs-panel{
+        padding: 0px;
+    }
 }
