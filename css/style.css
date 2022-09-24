@@ -1059,7 +1059,7 @@ background-position:center center ;
 }
 
 .common_cards .medical_card .medical_card_info .share .icons span {
-  padding-left: 5px;
+  padding-left: 12px;
   padding-right: 12px;
   font-size: 15px;
   font-weight: 600;
@@ -1536,6 +1536,7 @@ footer .useful_links ul li a{
 footer .contact_details .contact_info {
   display: flex;
   align-items:center;
+  margin-bottom: 33px;
 }
 footer .contact_details .contact_info img {
   margin-right: 10px;
@@ -1547,7 +1548,7 @@ width: 35px;
 footer .contact_details .contact_info .info{
 display: flex;
 flex-direction: column;
-margin-bottom: 33px;
+
 }
 footer .contact_details .contact_info .info span:first-of-type{
   color:#8FCDA0;
