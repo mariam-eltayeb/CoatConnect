@@ -1,0 +1,42 @@
+.filters{
+    padding:30px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.filters>button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-weight: 400;
+    padding: 5px 20px;
+    font-size: 17px;
+    text-transform: capitalize;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.filters button i {
+    padding-right: 10px;
+    display: inline-block;
+}
+.filters span {
+    color:var(--main-color);
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.filters >ul {
+    padding-top: 20px;
+}
+.ads_section {
+    margin-bottom: 100px;
+}
+.ads_section .search_ads img {
+    width: 100%;
+}
+
