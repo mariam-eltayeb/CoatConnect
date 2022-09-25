@@ -54,9 +54,10 @@
 .organizer_details{
     background-color:var(--bg-color-1);
     padding: 0 70px;
+    overflow: hidden;
+}
+.oragnizers{
     position: relative;
-    /* max-height: 2795px; */
-    /* overflow: hidden; */
 }
 
 .organizer_info {
@@ -69,7 +70,9 @@
    border-radius: 15px;
    margin-bottom: 60px;
    position: absolute;
-   top: -70px;
+   margin: auto;
+   top: -90px;
+   left: 54px;
 }
 .organizer_info .organizer_photo {
     width: 285px;
@@ -136,7 +139,7 @@
 
 /* navigation tabs */
 .navigation_tabs{
-    padding-top: 240px;
+    padding-top: 210px;
     position: relative;
 }
 
@@ -264,6 +267,7 @@
    
     .organizer_info{
         flex-direction: column;
+        left: 38px;
     }
     .organizer_info .organizer_photo {
         width: 176px;
@@ -294,7 +298,7 @@
 }
 @media (min-width: 611px ) and (max-width: 800px){
     .navigation_tabs {
-        padding-top: 435px;
+        padding-top: 390px;
     }
 }
 @media (min-width: 800px ) and (max-width: 900px){
@@ -319,6 +323,7 @@
     .organizer_info{
         flex-direction: column;
         width: 98%;
+        left: 5px;
     }
 
     .organizer_info .organizer_photo {
@@ -336,7 +341,7 @@
     width: 100%;
     }
     .navigation_tabs {
-        padding-top: 695px;
+        padding-top: 640px;
     }
     .nav-pills li button{
         font-size: 16px;

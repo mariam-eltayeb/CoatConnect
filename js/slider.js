@@ -4,7 +4,7 @@ $('.organizer_carsoul').slick({
     centerPadding: '0px',
     slidesToShow: 5,
     slidesToscroll: 2,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,
     responsive: [
