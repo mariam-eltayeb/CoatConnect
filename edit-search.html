@@ -901,7 +901,147 @@
    </section>
    <section>
     <div class="filters">
-        <button> <i class="fa-solid fa-sliders"></i> filter</button>
+        <div>
+          <button onclick="openFilter()" id="filterButton"> <i class="fa-solid fa-sliders"></i> filter</button>
+          <div class="filtered_menu" id="filtered-menu">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header filtered_heading" id="flush-headingOne">
+                  <button class="accordion-button collapsed" onclick="rotate()"  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                   onsite events <i class="fa-solid fa-angle-right rotate_shape"></i>
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body selections">
+                    <input type="checkbox" id="event-1" name="event-1" >
+                    <label for="event-1"> Recorded courses </label><br>
+                    <input type="checkbox" id="event-2" name="event-2" >
+                    <label for="event-2"> web conferences </label><br>
+                    <input type="checkbox" id="event-3" name="event-3">
+                    <label for="event-3">live courses</label><br>
+                    <input type="checkbox" id="event-4" name="event-4" >
+                    <label for="event-4"> Recorded courses </label><br>
+                    <input type="checkbox" id="event-5" name="event-5" >
+                    <label for="event-5"> web conferences </label><br>
+                    <input type="checkbox" id="event-6" name="event-6">
+                    <label for="event-6">live courses</label><br>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header filtered_heading" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" onclick="rotate()" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Speciality <i class="fa-solid fa-angle-right rotate_shape"></i>
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body  selections">
+                    <input type="radio" id="speciality-1" name="Speciality" >
+                    <label for="speciality-1"> Recorded courses </label><br>
+                    <input type="radio" id="speciality-2" name="speciality" >
+                    <label for="speciality-2"> web conferences </label><br>
+                    <input type="radio" id="speciality-3" name="speciality">
+                    <label for="speciality-3">live courses</label><br>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header filtered_heading" id="flush-headingThree">
+                  <button class="accordion-button collapsed"  onclick="rotate()" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                   country <i class="fa-solid fa-angle-right rotate_shape"></i>
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body  selections">
+                    <input type="radio" id="country-1" name="country" >
+                    <label for="country-1"> country-1 </label><br>
+                    <input type="radio" id="country-2" name="country" >
+                    <label for="country-2"> country-2</label><br>
+                    <input type="radio" id="country-3" name="country">
+                    <label for="country-3">country-3</label><br>
+                  </div> </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header filtered_heading" id="flush-headingforth">
+                  <button class="accordion-button collapsed" onclick="rotate()" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseforth" aria-expanded="false" aria-controls="flush-collapseforth">
+                   city <i class="fa-solid fa-angle-right rotate_shape"></i>
+                  </button>
+                </h2>
+                <div id="flush-collapseforth" class="accordion-collapse collapse" aria-labelledby="flush-headingforth" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body  selections">
+                    <input type="radio" id="country-1" name="country" >
+                    <label for="country-1"> city-1 </label><br>
+                    <input type="radio" id="country-2" name="country" >
+                    <label for="country-2"> city-2</label><br>
+                    <input type="radio" id="country-3" name="country">
+                    <label for="country-3">city-3</label><br>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header filtered_heading" id="flush-headingfifth">
+                  <button class="accordion-button collapsed" onclick="rotate()" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefifth" aria-expanded="false" aria-controls="flush-collapsefifth">
+                   language <i class="fa-solid fa-angle-right rotate_shape"></i>
+                  </button>
+                </h2>
+                <div id="flush-collapsefifth" class="accordion-collapse collapse" aria-labelledby="flush-headingfifth" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body  selections">
+                    <input type="radio" id="language-1" name="language" >
+                    <label for="language-1"> English</label><br>
+                    <input type="radio" id="language-2" name="language" >
+                    <label for="language-2"> Arabic</label><br>
+                    <input type="radio" id="language-3" name="language">
+                    <label for="language-3">French</label><br>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header filtered_heading" id="flush-headingsixth">
+                  <button class="accordion-button collapsed"onclick="rotate()" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesixth" aria-expanded="false" aria-controls="flush-collapsesixth">
+                   date <i class="fa-solid fa-angle-right rotate_shape"></i>
+                  </button>
+                </h2>
+                <div id="flush-collapsesixth" class="accordion-collapse collapse date_main" aria-labelledby="flush-headingsixth" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body date_body">
+                      <input type="date" id="date"  placeholder="dd/mm/yy">
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header filtered_heading" id="flush-headingsiventh">
+                  <button class="accordion-button collapsed" onclick="rotate()" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesiventh" aria-expanded="false" aria-controls="flush-collapsesiventh">
+                   price <i class="fa-solid fa-angle-right rotate_shape"></i>
+                  </button>
+                </h2>
+                <div id="flush-collapsesiventh" class="accordion-collapse collapse" aria-labelledby="flush-headingsiventh" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body  selections">
+                    <input type="radio" id="free" name="price" >
+                    <label for="free"> free courses and events </label><br>
+                    <input type="radio" id="price-1" name="price" >
+                    <label for="price-1"> 1 - 500</label><br>
+                    <input type="radio" id="price-2" name="price">
+                    <label for="price-2"> 500 - 1000</label><br>
+                    <input type="radio" id="price-3" name="price">
+                    <label for="price-3"> 500 - 1000</label><br>
+                    
+                    <button class="accordion-button collapsed custom_heading  selections" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                      <input type="radio" id="custom" name="price"> <label for="custom">custom price range</label>
+                     </button>
+                     <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body  selections custom_prices">
+                        <input type="number" placeholder="From">
+                        <input type="number" placeholder="To">
+                      </div>
+                     </div>    
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+
         <span>5607 events found</span>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -941,6 +1081,9 @@
                         <div>
                             <img src="./images/search/search-ads/ads-1.jpg" alt=" ad image 1">
                         </div>
+                        <div>
+                          <img src="./images/search/search-ads/ads-2.jpg" alt=" ad image 1">
+                      </div>
                       </div>
                 </div>
                 <div class="ads_section">
@@ -953,6 +1096,9 @@
                         </div>
                         <div>
                             <img src="./images/search/search-ads/ads-1.jpg" alt=" ad image 1">
+                        </div>
+                        <div>
+                          <img src="./images/search/search-ads/ads-2.jpg" alt=" ad image 1">
                         </div>
                       </div>
                 </div>
@@ -3139,19 +3285,17 @@
     <h6> &copy; 2022 CoatConnect.All copyrights reserved. </h6>
     </div> 
   
-    
-
 
 <!-- bootstrap 5.0v scripts -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
-<script src="./js/bootstrap/bootstrap.min.js"></script>
-
-<!-- Slick.s library -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="./slick/slick-1.8.1/slick/slick.min.js"></script>
-<!--  calling search ads -->
-<script src="./js/search-ads.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <!-- <script src="./js/bootstrap/bootstrap.min.js"></script> --> 
+ <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- Slick.s library -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./slick/slick-1.8.1/slick/slick.min.js"></script>
+  <!--  calling search ads -->
+  <script src="./js/search-ads.js"></script>
+  <script src="./js/search-filter.js"></script>
 </body>
 </html>

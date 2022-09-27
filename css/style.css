@@ -1008,6 +1008,10 @@ background-position:center center ;
   font-size: 12px;
   font-weight: 600;
   text-transform: capitalize;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 .common_cards .medical_card .medical_card_info .category div button:first-of-type{
   background-color:var(--cat-color);  
