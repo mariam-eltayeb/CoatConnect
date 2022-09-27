@@ -4,10 +4,11 @@ $('.search_ads').slick({
     centerPadding: '0px',
     slidesToShow: 1,
     slidesToscroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     arrows: false,
-    dots: false,
+    dots: true,
+    dotsClass:true, 
     centerMode: true,
     focusOnSelect: true
   });
