@@ -1,3 +1,6 @@
+.oragnizing_section .organizer_title{
+    text-align: center;
+}
 .filters{
     padding:30px 70px;
     display: flex;
@@ -202,12 +205,31 @@ box-shadow: none !important;
     -o-border-radius:25px;
     display: none;
     position: absolute;
-    bottom: -265px;
+    top: 100px;
     left: 64px;
     z-index: 3333;
 
 }
-
+.accordion-button::after{
+    font-family: "Font Awesome 5 Free";
+    display: block;
+    /* transform: rotate(360deg) !important;
+    -webkit-transform: rotate(360deg) !important;
+    -moz-transform: rotate(360deg) !important;
+    -ms-transform: rotate(360deg) !important;
+    -o-transform: rotate(360deg) !important; */
+    font-weight: 800;
+    content: "\f105";
+    background-image: none;
+}
+.accordion-button:not(.collapsed)::after{
+    transform: rotate(90deg) !important;
+    -webkit-transform: rotate(90deg) !important;
+    -moz-transform: rotate(90deg) !important;
+    -ms-transform: rotate(90deg) !important;
+    -o-transform: rotate(90deg) !important;
+    background-image:none;
+}
 
 .show{
     display: inline-block;
@@ -227,7 +249,7 @@ box-shadow: none !important;
 @media (min-width: 581px) and (max-width: 878px)   {
     .filtered_menu {
       
-        bottom: -207px;
+        top: 88px;
         left: 64px;
        
     }
@@ -235,7 +257,7 @@ box-shadow: none !important;
 @media (min-width: 440px) and (max-width: 580px)   {
     .filtered_menu {
         width: 65%;
-        bottom: -163px;
+        top: 76px;
         left: 64px;
        
     }
@@ -243,7 +265,7 @@ box-shadow: none !important;
 @media (min-width: 371px) and (max-width: 439px)   {
     .filtered_menu {
         width: 95%;
-        bottom: -205px;
+        top: 80px;
         left: 5px;
        
     }
@@ -255,12 +277,20 @@ box-shadow: none !important;
 @media (min-width: 320px) and (max-width: 370px)   {
     .filtered_menu {
         width: 95%;
-        bottom: -176px;
+        top: 80px;
         left: 5px;
        
     }
     .filters{
         padding-left: 5px;
         padding-right: 5px;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px)  {
+    .ads_partition{
+        display: none;
+    }
+    .filters{
+        padding-bottom: 5px;
     }
 }
