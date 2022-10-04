@@ -507,7 +507,7 @@ a {
 /* start of landing images an slider */
 .slider_section {
  height: 85vh;
-  background-image: linear-gradient(rgba(13, 27, 62, 0.68),rgba(13, 27, 62, 0.68)) , url("./../images/Scroll\ Group\ 1.png");
+  background-image: linear-gradient(rgba(13, 27, 62, 0.68),rgba(13, 27, 62, 0.68)) , url("./../images/medicalDoctor.webp");
   background-size:cover;
   background-repeat: no-repeat;
   position:relative;
@@ -868,7 +868,7 @@ color:var(--text-color);
 .common_cards .medical_card .image  {
   height: 225px;
   width: 100%;
-  background-image:linear-gradient(#70707060,#70707060),url(./../images/cardImages/news-18@2x.png);
+  background-image:linear-gradient(#70707060,#70707060),url(./../images/cardImages/DoctorRoom.webp);
   background-size:cover;
   background-repeat:no-repeat;
   position: relative;
@@ -881,11 +881,11 @@ background-position:center center ;
 }
 
 .common_cards .medical_card .image.first_card_image{
-  background-image:linear-gradient(#0d1b3e65,#0d1b3e65),url(./../images/cardImages/Scroll\ Group\ 7@2x.png);
+  background-image:linear-gradient(#0d1b3e65,#0d1b3e65),url(./../images/cardImages/Doctorman.webp);
 
 }
 .common_cards .medical_card .image.secound_card_image{
-  background-image:linear-gradient(#0d1b3e65,#0d1b3e65),url(./../images/cardImages/Scroll\ Group\ 8@2x.png);
+  background-image:linear-gradient(#0d1b3e65,#0d1b3e65),url(./../images/cardImages/Doctorwomen.webp);
 
 }
 .common_cards .medical_card .image i {
@@ -1153,7 +1153,7 @@ background-position:center center ;
   margin-bottom: 25px;
 }
 .featured_organizer .organizer_carsoul {
-  background-image: linear-gradient(#002f4fd3,#002f4fd3) , url(./../images/Scroll\ Group\ 9@2x.png);
+  background-image: linear-gradient(#002f4fd3,#002f4fd3) , url(./../images/Group.webp);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -1495,7 +1495,7 @@ margin-bottom: 20px;
   margin-right: 10px;
 }
 .socails .common {
-  background-image:url(./../images/Group\ 2374.svg);
+  background-image:url(./../images/socailBacgrounds.svg);
   background-repeat:no-repeat;
   display: inline-block;
 
@@ -2186,6 +2186,12 @@ color: var(--text-color);
 @media (min-width: 320px) and (max-width: 575px) {
 
   /* nav links */
+  .main_header {
+    padding: 12px 10px;
+  }
+  .main_header .header_details .left_side_header a, .main_header .header_details .right_side_header a, .main_header .header_details .left_side_header .contact span {
+    padding-right: 5px;
+  }
   .navbar-collapse {
     display: none;
   }
@@ -2837,10 +2843,13 @@ footer .left_info p {
   .main_header .header_details .left_side_header .contact i, .main_header .header_details .left_side_header .assiatant i {
     padding: 0 7px;
   }
+ 
+  /* end of main  top header */
+}
+@media (min-width: 320px)  and (max-width: 368px) {
   .main_header .header_details .right_side_header .log button{
     margin-top: 20px;
   }
-  /* end of main  top header */
 }
 
 @media (min-width: 320px) and (max-width: 355px){
