@@ -29,7 +29,7 @@
     justify-content: center;
     height: 100%;
 }
-.oragnizing_section .organizer_title h2 {
+.oragnizing_section .organizer_title h1 {
     font-size: 42px;
     color: var(--text-color);
     font-weight: 500;

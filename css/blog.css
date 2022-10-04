@@ -24,7 +24,7 @@
     font-size: 20px;
 }
 .slider_section{
-    background-image: linear-gradient(rgba(13, 27, 62, 0.52),rgba(13, 27, 62, 0.52)) , url(./../images/Scroll\ Group\ 1.png);
+    background-image: linear-gradient(rgba(13, 27, 62, 0.52),rgba(13, 27, 62, 0.52)) , url(./../images/medicalDoctor.webp);
     height: 805px;
 }
 
@@ -136,7 +136,7 @@
     
 }
 .specail_card {
-    background-image:url("./../images/cardImages/news-18@2x.png");
+    background-image:url("./../images/cardImages/DoctorRoom.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -196,7 +196,7 @@
 }
 .details_card {
     height: 344px;
-    background-image: linear-gradient(#0d1b3e66,#0d1b3e66), url(./../images/cardImages/Scroll\ Group\ 7@2x.png);
+    background-image: linear-gradient(#0d1b3e66,#0d1b3e66), url(./../images/cardImages/Doctorwomen.webp);
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 20px;
@@ -351,7 +351,7 @@
     margin-left: 0px !important;
     margin-right: 0px !important;
     height: 235px;
-    background-image: linear-gradient(#0d1b3e66,#0d1b3e66), url(./../images/cardImages/Scroll\ Group\ 7@2x.png);
+    background-image: linear-gradient(#0d1b3e66,#0d1b3e66), url(./../images/cardImages/Doctorman.webp);
 }
 .second_detailed_card .specail_body {
     background-color:rgba(35, 51, 90, 0.47);
