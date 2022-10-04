@@ -122,7 +122,7 @@ padding: 8px 10px 9px;
     color:white;
 }
 .common_cards .medical_card .image{
-    background-image: url(./../images/news-18-1@2x.png);
+    background-image: url(./../images/cardImages/DoctorRoom.webp);
 }
 .common_cards .medical_card .image{
     justify-content: flex-start;
@@ -140,10 +140,10 @@ padding: 8px 10px 9px;
     color:white;
 }
 .card_image_1 {
-    background-image:url(./../images/cardImages/Scroll\ Group\ 7@2x.png) !important;
+    background-image:url(./../images/cardImages/Doctorwomen.webp) !important;
 }
 .card_image_2{
-    background-image:url(./../images/cardImages/Scroll\ Group\ 8@2x.png) !important;
+    background-image:url(./../images/cardImages/Doctorman.webp) !important;
 }
 .common_cards .medical_card{
     height: 331px;
